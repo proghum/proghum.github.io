@@ -1,23 +1,86 @@
 <html>
   <head>
+    
     <title>Welcome to Programming Humanity</title>
+    
+    <link rel="stylesheet" href="home.css">
+    
+    <script type="text/javascript">
+      
+      // Credited to:  https://codepen.io/0leg/pen/faIKJ?editors=1010
+      $(function() {
+        $('.pop-up').hide();
+        $('.pop-up').fadeIn(1000);
+  
+        $('.close-button').click(function (e) { 
+
+          $('.pop-up').fadeOut(700);
+          $('#overlay').removeClass('blur-in');
+          $('#overlay').addClass('blur-out');
+          e.stopPropagation();        
+        });
+      });  
+      
+    </script>
   </head>
   <body>
 
 <div id="overlay" class="cover blur-in">
   <div class="content">
+    
     <h1>Welcome to Programming Humanities</h1>
-    <span>
-    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-    </span>
+    
     <span>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus viverra porta. Pellentesque scelerisque eros quis dignissim semper. Nulla ut justo a sapien lobortis posuere. Maecenas scelerisque justo eleifend risus dapibus, id bibendum tellus placerat. Sed massa diam, ornare ut varius ut, auctor non arcu. Cras rutrum tortor eu diam feugiat aliquam. Suspendisse rutrum pretium pretium. 
+      Intermediate Course IPHS/CWL 300 level:
+      Artificial Intelligence Applications in the Liberal Arts
       </p>
     </span>
+    
     <span>
-    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+      <p>
+      This course is an interdisciplinary liberal arts approach to explore textual, visual (still and motion) and auditory works using Machine Learning/Artificial Intelligence (ML/AI).  The majority of our time will be spent on textual analysis. The last weeks of the course will move to image and sound by building on the previous skills acquired. Our approach blends the conceptual with hands-on exploration and application of ML/AI when dealing with text, image, and sound.
+      </p>
     </span>
+    
+    <span>
+      <p>
+      This course is aimed at thinking through the humanist-centered theory and practice of artificial intelligence and machine learning. To that end, the course will focus on domains entwined with AI like cognitive science, linguistics and literature. 
+      </p>
+    <span>
+      
+    <span>
+      <p>
+      The semester begins with the basics of working in Python, Data Wrangling, and Visualizations  and ends with an exploration of generative art using Neural Networks.  Each week students will be required to complete a carefully curated list of readings and self-paced programming exercises.  In class we’ll reinforce and expand the theory for that week. Class time will also be spent in programming labs that will expand upon the week’s topics with slightly more challenging development of textual analysis.
+      </p>
+    </span>
+    
+    <span>
+      <p>
+        By the end of the semester, the objectives of this course are:
+        <ul>
+          <li>Understand how text can be analyzed and understood using ML/AI</li>
+          <li>Develop a new way of thinking critically and creatively about data, information, knowledge and wisdom</li>
+          <li>Gain a basic working familiarity with the popular ML/AI research tools, frameworks and best practices</li>
+          <li>Acquire a general working familiarity with the biologically-inspired tools and techniques of Artificial Intelligence</li>
+          <li>Be able to demonstrate the effective application of ML/AI technologies in analyzing text</li>
+          <li>Produce one major ML/AI project that applies some major concepts learned in this course to a research project designed around their intellectual and/or academic interests (Students must work on textual analysis to earn CWL credit toward the concentration)</li>
+        </ul>
+      </p>
+    </span>
+      
+    <span>
+      <p>
+      Students taking this course should have had some exposure to programming.  The first several weeks will be spent learning Python. 
+      <p>
+    </span>
+      
+    <span>
+      <p>
+      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+      </p>
+    </span>
+      
   </div>
 </div>
 <div class="row pop-up">
